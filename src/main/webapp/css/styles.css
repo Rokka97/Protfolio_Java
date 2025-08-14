@@ -4,3 +4,6 @@ body {
 .navbar {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+.scroll-offset{
+    scroll-margin-top: 80px;
+}
