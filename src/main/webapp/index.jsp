@@ -47,10 +47,10 @@
 <!-- Seccion Titulo -->
     <header id="titulo" class="vh-100 w-100 px-5 d-flex flex-column justify-content-center align-items-center bg-dark text-white">
         <h1>¡Hola! Soy Leandro Becerra</h1>
-        <p>Desarrollador web en formación, actualmente cursando el 3 año de ingeniería en infromática. Soy alguien al cual
-        le gusta aprender cosas nuevas, ingrese a esta carrera por que me gusta entender como funcionan los computadores y
-        y como funciona la programacion, actuelmente me estoy formando en varios lenguajes de programacion aun en busca de
-        especializarme en alguno.</p>
+        <p>Desarrollador web en formación, actualmente cursando el tercer año de Ingeniería en Informática.
+            Me gusta aprender cosas nuevas; ingresé a esta carrera porque me apasiona entender cómo funcionan los
+            computadores y la programación. Actualmente me estoy formando en varios lenguajes de programación, aún en
+            busca de especializarme en alguno.</p>
     </header>
 
 <!-- Seccion Proyectos -->
@@ -128,21 +128,25 @@
 <!-- Seccion contacto -->
 <section id="contacto" class="container my-5">
     <h2 class="text-center mb-4">Contáctame</h2>
-    <form action="contacto.jsp" method="post">
+    <form action="ContactoServlet" method="post">
         <div class="mb-3">
             <label for="nombre" class="form-label">Nombre</label>
             <input type="text" class="form-control" id="nombre" name="nombre" required>
         </div>
         <div class="mb-3">
-            <label for="mensaje" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="descripcion" class="form-label">Descripción</label>
+            <textarea class="form-control" id="descripcion" name="descripcion" rows="4" required></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
 </section>
 <!-- Footer -->
 <footer class="bg-dark text-white text-center py-3">
-    © 2025 Leandro Dev
+    © 2025 Leandro Becerra || Ing.Informática
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
