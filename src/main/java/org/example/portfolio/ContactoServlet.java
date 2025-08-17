@@ -35,7 +35,7 @@ public class ContactoServlet extends HttpServlet {
         if (nombre == null || nombre.trim().isEmpty() || 
             email == null || email.trim().isEmpty() || 
             descripcion == null || descripcion.trim().isEmpty()) {
-            resp.sendRedirect("index.jsp?error=campos_vacios");
+            resp.sendRedirect("index.jsp?error=campos_vacios#contacto");
             return;
         }
         
@@ -43,11 +43,11 @@ public class ContactoServlet extends HttpServlet {
         try {
             insertarContacto(nombre.trim(), email.trim(), descripcion.trim());
             // Redirigir con mensaje de éxito
-            resp.sendRedirect("index.jsp?success=mensaje_enviado");
+            resp.sendRedirect("index.jsp?success=mensaje_enviado#contacto");
         } catch (SQLException e) {
             e.printStackTrace();
             // Redirigir con mensaje de error
-            resp.sendRedirect("index.jsp?error=error_base_datos");
+            resp.sendRedirect("index.jsp?error=error_base_datos#contacto");
         }
     }
     
