@@ -27,37 +27,5 @@ Este proyecto es un portafolio web dinámico desarrollado como parte de mi forma
 
 ---
 
-## Estructura del Proyecto
-
-Protfolio_Java/
-├── .idea/                    
-├── .mvn/                    
-├── src/
-│   └── main/
-│       ├── java/
-│       │   └── org/example/portfolio/
-│       │       ├── ContactoServlet.java     
-│       │       ├── ImagenServlet.java      
-│       │       ├── Proyecto.java           
-│       │       └── ProyectosServlet.java   
-│       └── webapp/
-│           ├── WEB-INF/
-│           │   ├── database/               
-│           │   └── web.xml                  
-│           ├── css/
-│           │   └── styles.css               
-│           ├── logos/                        
-│           └── index.jsp                   
-├── test_current_layout.html                
-├── test_logo_position.html
-├── test_reorganized_sidebar.html
-├── test_sidebar_layout.html
-├── test_vertical_alignment.html
-├── .gitignore                                
-├── README.md                                
-├── mvnw / mvnw.cmd                          
-└── pom.xml                                
-
-
 
 
