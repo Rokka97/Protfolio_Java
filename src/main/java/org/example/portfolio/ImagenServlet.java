@@ -26,7 +26,6 @@ public class ImagenServlet extends HttpServlet {
             response.sendError(HttpServletResponse.SC_BAD_REQUEST, "ID de imagen no proporcionado");
             return;
         }
-
         int id;
         try {
             id = Integer.parseInt(idParam);
@@ -34,7 +33,6 @@ public class ImagenServlet extends HttpServlet {
             response.sendError(HttpServletResponse.SC_BAD_REQUEST, "ID de imagen inválido");
             return;
         }
-
         String dbPath = getServletContext().getRealPath("/WEB-INF/database/portfolio.db");
 
         try {
